@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- ↑ Sagt dem Browser: "Das hier ist eine moderne HTML-Seite." Steht immer ganz oben. -->
+
+<html lang="de">
+<!-- ↑ Alles zwischen <html> und </html> ist deine Seite. lang="de" = Sprache Deutsch. -->
+
+  <head>
+    <!-- Der <head> ist unsichtbar: Infos FÜR den Browser, nicht für Besucher. -->
+
+    <meta charset="UTF-8">
+    <!-- ↑ Damit Umlaute (ä, ö, ü, ß) richtig angezeigt werden. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ↑ Damit die Seite auch auf dem Handy gut aussieht. -->
+
+    <title>Toms Ecke</title>
+    <!-- ↑ Das steht oben im Browser-Tab. -->
+
+    <style>
+      /* Hier drin steht CSS: Es bestimmt, wie alles AUSSIEHT.
+         Probier ruhig aus, Farben oder Größen zu ändern! */
+
+      body {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;      /* Schriftart */
+        max-width: 640px;              /* Text nicht zu breit, besser lesbar */
+        margin: 60px auto;             /* Abstand oben + mittig zentriert */
+        padding: 0 20px;               /* Etwas Rand links/rechts (fürs Handy) */
+        line-height: 1.6;              /* Zeilenabstand */
+        color: #000000;                   /* Textfarbe (fast schwarz) */
+        background: #e9e9e9;           /* Hintergrund (warmes Off-White) */
+      }
+
+      h1 {
+        font-size: 2.4rem;             /* Größe der Hauptüberschrift */
+        margin-bottom: 0.2em;
+      }
+
+      .untertitel {
+        color: #ce0b0b;                   /* Grau für den Untertitel */
+        margin-top: 0;
+      }
+
+      a {
+        color: #b5461f;                /* Farbe von Links */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Der <body> ist alles, was Besucher SEHEN. -->
+
+    <h1>Hallo, ich bin Tom.</h1>
+    <!-- ↑ h1 = größte Überschrift. Es gibt h1 bis h6. -->
+
+    <p class="untertitel">Willkommen auf meiner kleinen Ecke im Internet.🙂 </p>
+    <!-- ↑ p = Absatz (paragraph). class="untertitel" verbindet ihn mit dem CSS oben. -->
+
+    <h2>Worum es hier geht</h2>
+
+    <p>
+      Diese Seite ist mein Experimentierfeld: Ich lerne gerade, Webseiten zu bauen,
+      und teile hier Dinge, die nicht so recht auf Social Media passen. Einfach irgendwelche Projekte und Ideen die so in meinem Kopf rum schwirren. 
+      <br><br>Hier ein paar aktuelle Projekte von mir: <br><br>
+      - tiefer in den Rallye Sport einsteigen<br>
+      - Simulator fahren (Dirtrallye, ACC, uvm.)
+    </p>
+
+    <h2>Woran ich gerade bastle</h2>
+
+    <ul>
+      <!-- ul = Liste mit Punkten. Jedes li ist ein Eintrag. -->
+      <li>Diese Webseite 🙂</li>
+      <li>Noch ein Projekt</li>
+      <li>Und noch eins</li>
+    </ul>
+
+    <p>
+      Mehr folgt bald. Bis dahin: <a href="mailto:t.porsche@protonmail.com">schreib mir</a>.
+      <!-- ↑ a = Link. href = wohin er führt. mailto: öffnet das Mailprogramm. -->
+    </p>
+
+  </body>
+</html>
